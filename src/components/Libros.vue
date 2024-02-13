@@ -1,6 +1,7 @@
 <template>
+        <h1>Listado de Libros</h1>
     <div :key="libro.id" v-for="libro in libros">
-        <Libro :libro="libro"/>
+        <Libro @delete-libro="$emit('delete-libro', libro.id)" :libro="libro"/>
     </div>
 </template>
 
@@ -14,6 +15,7 @@ import Libro from './Libro.vue';
         },
         props:{
             libros: Array
-        }
+        },
+        emits: ['delete-libro']
     }
 </script>
