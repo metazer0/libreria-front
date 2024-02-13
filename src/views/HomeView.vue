@@ -1,6 +1,10 @@
+<!-- Vista Principal -->
+
 <template>
   <div class="container justify-content-center">
+    <!-- modulo para agregar libro -->
     <AddLibro @new-libro="newLibro"/>
+    <!-- modulo para visualizar y eliminar libro -->
     <Libros @delete-libro="deleteLibro" :libros="libros"/>
   </div>
 </template>

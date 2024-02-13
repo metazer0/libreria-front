@@ -1,3 +1,5 @@
+<!-- modulo para renderizar libro -->
+
 <template>
   <div>
     <h3>

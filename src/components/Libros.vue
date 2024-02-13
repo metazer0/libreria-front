@@ -1,3 +1,5 @@
+<!-- modulo para enlistar libros -->
+
 <template>
         <h1>Listado de Libros</h1>
     <div :key="libro.id" v-for="libro in libros">

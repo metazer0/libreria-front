@@ -1,3 +1,5 @@
+<!-- form para capturar datos del libro -->
+
 <template>
     <form @submit="onSubmit" class="add-form">
       <div class="formm-control">
